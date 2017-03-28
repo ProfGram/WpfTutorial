@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTutorial"
+        xmlns:controls="clr-namespace:WpfTutorial.Support"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Text</Label>
+        xmlns:myIcon="clr-namespace:WpfTutorial.Support"
+        Title="MainWindow" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="grid1">
+        <!--<controls:PlayerIcon x:Name="test" Margin="218,451,590,82" ></controls:PlayerIcon>
+        <controls:PlayerIcon x:Name="test2" Margin="476,452,342,83"></controls:PlayerIcon>-->
+        <Image Stretch="Uniform">
+            <Image.Source>
+                <BitmapImage UriSource="Images/TableImage/Table.png"/>
+            </Image.Source>
+        </Image>
+        <Button Content="Add New Item"  Margin="206,277,602,256" Click="Button_Click"></Button>
+        <Button Content="Remove All Items"  Margin="203,192,605,341" Click="Button_Click_1" RenderTransformOrigin="0.5,-1.658"></Button>
     </Grid>
 </Window>
