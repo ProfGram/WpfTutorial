@@ -7,16 +7,17 @@
         xmlns:controls="clr-namespace:WpfTutorial.Support"
         mc:Ignorable="d"
         xmlns:myIcon="clr-namespace:WpfTutorial.Support"
-        Title="MainWindow" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="grid1">
+        Title="MainWindow" Height="800" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Canvas x:Name="canvas">
         <!--<controls:PlayerIcon x:Name="test" Margin="218,451,590,82" ></controls:PlayerIcon>
         <controls:PlayerIcon x:Name="test2" Margin="476,452,342,83"></controls:PlayerIcon>-->
-        <Image Stretch="Uniform">
+        <Image Stretch="Uniform" Canvas.Left="18" Canvas.Top="0" Height="600" Width="850">
             <Image.Source>
                 <BitmapImage UriSource="Images/TableImage/Table.png"/>
             </Image.Source>
         </Image>
-        <Button Content="Add New Item"  Margin="206,277,602,256" Click="Button_Click"></Button>
-        <Button Content="Remove All Items"  Margin="203,192,605,341" Click="Button_Click_1" RenderTransformOrigin="0.5,-1.658"></Button>
-    </Grid>
+        <Button Content="Add New Item" Click="Button_Click" Canvas.Left="392" Canvas.Top="459"/>
+        <Button Content="Remove All Items" Click="Button_Click_1" Canvas.Left="85" Canvas.Top="244"/>
+
+    </Canvas>
 </Window>

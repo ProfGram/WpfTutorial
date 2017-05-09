@@ -5,14 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfTutorial.Support"
              mc:Ignorable="d" 
-             d:DesignHeight="50" Width="233" >
+             d:DesignHeight="250" Width="250" >
 
-    <Grid  Margin="0,0,84,-85">
+    <Grid  Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="30" Width="232"   Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Label Grid.Row="0" HorizontalContentAlignment="Center" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="50" Width="80"   Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="center"  Grid.RowSpan="2" >
             <Label.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Activate Player" Click="MenuItem_Click"/>
@@ -22,5 +22,6 @@
                 </ContextMenu>
             </Label.ContextMenu>
         </Label>
+        
     </Grid>
 </UserControl>

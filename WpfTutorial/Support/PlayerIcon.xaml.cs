@@ -11,15 +11,36 @@ namespace WpfTutorial.Support
     /// </summary>
     public partial class PlayerIcon :  UserControl, INotifyPropertyChanged
     {
-        public PlayerIcon()
+        
+        public PlayerIcon(int id)
         {
             DataContext = this;
+            this._id = id;
             InitializeComponent();
-            PlayerName = defaultPlayerName;
+            PlayerName = defaultPlayerName + "" + this._id;
         }
 
+        public enum Position { left, top, right, bottom };
         private string defaultPlayerName = "Player";
         private string _playerName;
+        private int _id;
+
+        public void setDataPosition(Position position)
+        {
+            switch (position)
+            {
+                case Position.left:
+                    break;
+                case Position.top:
+                    break;
+                case Position.right:
+                    break;
+                case Position.bottom:
+                    break;
+                default:
+                    break;
+            }
+        }
 
         public string PlayerName {
             get { return _playerName;  }
@@ -31,6 +52,10 @@ namespace WpfTutorial.Support
                     OnPropertyChanged();
                 }
             }
+        }
+
+        public int ID {
+            get { return _id; }
         }
 
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
