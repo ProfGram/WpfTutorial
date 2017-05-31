@@ -7,12 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="250" Width="250" >
 
-    <Grid  Margin="0,0,0,0">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" HorizontalContentAlignment="Center" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="50" Width="80"   Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="center"  Grid.RowSpan="2" >
+    <Canvas>
+        <Label Grid.Row="0" HorizontalContentAlignment="Center" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="50" Width="80" Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="center"  Grid.RowSpan="2" >
             <Label.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Activate Player" Click="MenuItem_Click"/>
@@ -22,6 +18,8 @@
                 </ContextMenu>
             </Label.ContextMenu>
         </Label>
-        
-    </Grid>
+        <Label Canvas.Top="53" Width="63" Height="28" Background="Transparent" Foreground="Black"  HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Content="{Binding Path=Points, Mode=OneWay}" ToolTip="" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="$" Background="Transparent" Foreground="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Canvas.Left="63" Canvas.Top="53" Height="28" Width="16" RenderTransformOrigin="0.479,0.75"></Label>
+
+    </Canvas>
 </UserControl>

@@ -24,6 +24,12 @@ namespace WpfTutorial.Support
         private string defaultPlayerName = "Player";
         private string _playerName;
         private int _id;
+        private double _points = 0;
+
+        public void addPointValue(double value)
+        {
+            Points = Points + value;
+        }
 
         public void setDataPosition(Position position)
         {
@@ -43,12 +49,25 @@ namespace WpfTutorial.Support
         }
 
         public string PlayerName {
-            get { return _playerName;  }
+            get { return _playerName; }
             set
             {
                 if (_playerName != value)
                 {
                     _playerName = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public double Points
+        {
+            get { return _points; }
+            set
+            {
+                if(value >=0)
+                {
+                    _points = value;
                     OnPropertyChanged();
                 }
             }

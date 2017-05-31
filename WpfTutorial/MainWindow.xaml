@@ -16,8 +16,9 @@
                 <BitmapImage UriSource="Images/TableImage/Table.png"/>
             </Image.Source>
         </Image>
-        <Button Content="Add New Item" Click="Button_Click" Canvas.Left="392" Canvas.Top="459"/>
-        <Button Content="Remove All Items" Click="Button_Click_1" Canvas.Left="85" Canvas.Top="244"/>
+        <Label x:Name="potValueLabel" DataContext="DynamicResource GameController" Content="{Binding PotValue, Mode=OneWay}" Canvas.Left="416" Canvas.Top="315" Height="75" Width="180"></Label>
+        <!--<Button Content="Add New Item" Click="Button_Click" Canvas.Left="392" Canvas.Top="459"/>-->
+        <!--<Button Content="Remove All Items" Click="Button_Click_1" Canvas.Left="85" Canvas.Top="244"/>-->
 
     </Canvas>
 </Window>
