@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System;
 using System.Windows.Controls;
 
-namespace WpfTutorial.Support
+namespace WpfTutorial.GUI_Support
 {
     /// <summary>
     /// Interaktionslogik für PlayerIcon.xaml

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace WpfTutorial
 {
-    class Controller: INotifyPropertyChanged
+    class GameModel: INotifyPropertyChanged
     {
         private int currentButtonPosition = 0;
-        private double _potValue = 0;
+        private double _potValue = 100;
 
         public double PotValue
         {

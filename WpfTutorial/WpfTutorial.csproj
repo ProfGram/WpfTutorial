@@ -56,9 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controller.cs" />
-    <Compile Include="Support\PlayerIcon.xaml.cs">
+    <Compile Include="GUI\Support\PlayerIcon.xaml.cs">
       <DependentUpon>PlayerIcon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Support\Card.cs" />
+    <Compile Include="Support\CardDefinition.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,7 +73,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Support\PlayerIcon.xaml">
+    <Page Include="GUI\Support\PlayerIcon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\TableImage\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Cards\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

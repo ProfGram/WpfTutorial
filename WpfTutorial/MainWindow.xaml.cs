@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using WpfTutorial.Support;
+using WpfTutorial.GUI_Support;
 
 
 namespace WpfTutorial
@@ -15,11 +15,11 @@ namespace WpfTutorial
         private int x = 0;
         private List<PlayerIcon> playerIcons = new List<PlayerIcon>();
         private List<Point> playerPointList = new List<Point>();
-        private Controller GameController;
+        private GameModel GameController;
 
         public MainWindow()
         {
-            GameController = new Controller();
+            GameController = new GameModel();
             InitializeComponent();
             this.hideSomething();
             this.initGlobalPositions();
@@ -50,11 +50,11 @@ namespace WpfTutorial
             int i = 1;
             foreach (var item in playerPointList)
             {
-                Support.PlayerIcon test = new Support.PlayerIcon(i);
-                Canvas.SetLeft(test, item.X);
-                Canvas.SetTop(test, item.Y);
-                canvas.Children.Add(test);
-                playerIcons.Add(test);
+                GUI_Support.PlayerIcon icon = new GUI_Support.PlayerIcon(i);
+                Canvas.SetLeft(icon, item.X);
+                Canvas.SetTop(icon, item.Y);
+                canvas.Children.Add(icon);
+                playerIcons.Add(icon);
                 i++;
             }
 
