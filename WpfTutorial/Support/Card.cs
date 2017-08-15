@@ -14,6 +14,9 @@ namespace WpfTutorial.Support
 
         public Card(Color color, Number number, string image)
         {
+            this.color = color;
+            this.number = number;
+            this.image = image;
         }
 
         Number GetNumber()
@@ -26,7 +29,7 @@ namespace WpfTutorial.Support
             return this.color;
         }
 
-        string GetCardImage()
+        public string GetCardImage()
         {
             return this.image;
         }
