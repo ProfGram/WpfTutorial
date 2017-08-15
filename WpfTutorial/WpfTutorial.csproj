@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Support\Card.cs" />
     <Compile Include="Support\CardDefinition.cs" />
+    <Compile Include="Support\CardGenerator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,8 +109,60 @@
   <ItemGroup>
     <Resource Include="Images\TableImage\Table.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\Cards\" />
+    <Resource Include="Images\Cards\card_2c.png" />
+    <Resource Include="Images\Cards\card_2d.png" />
+    <Resource Include="Images\Cards\card_2h.png" />
+    <Resource Include="Images\Cards\card_2s.png" />
+    <Resource Include="Images\Cards\card_3c.png" />
+    <Resource Include="Images\Cards\card_3d.png" />
+    <Resource Include="Images\Cards\card_3h.png" />
+    <Resource Include="Images\Cards\card_3s.png" />
+    <Resource Include="Images\Cards\card_4c.png" />
+    <Resource Include="Images\Cards\card_4d.png" />
+    <Resource Include="Images\Cards\card_4h.png" />
+    <Resource Include="Images\Cards\card_4s.png" />
+    <Resource Include="Images\Cards\card_5c.png" />
+    <Resource Include="Images\Cards\card_5d.png" />
+    <Resource Include="Images\Cards\card_5h.png" />
+    <Resource Include="Images\Cards\card_5s.png" />
+    <Resource Include="Images\Cards\card_6c.png" />
+    <Resource Include="Images\Cards\card_6d.png" />
+    <Resource Include="Images\Cards\card_6h.png" />
+    <Resource Include="Images\Cards\card_6s.png" />
+    <Resource Include="Images\Cards\card_7c.png" />
+    <Resource Include="Images\Cards\card_7d.png" />
+    <Resource Include="Images\Cards\card_7h.png" />
+    <Resource Include="Images\Cards\card_7s.png" />
+    <Resource Include="Images\Cards\card_8c.png" />
+    <Resource Include="Images\Cards\card_8d.png" />
+    <Resource Include="Images\Cards\card_8h.png" />
+    <Resource Include="Images\Cards\card_8s.png" />
+    <Resource Include="Images\Cards\card_9c.png" />
+    <Resource Include="Images\Cards\card_9d.png" />
+    <Resource Include="Images\Cards\card_9h.png" />
+    <Resource Include="Images\Cards\card_9s.png" />
+    <Resource Include="Images\Cards\card_Ac.png" />
+    <Resource Include="Images\Cards\card_Ad.png" />
+    <Resource Include="Images\Cards\card_Ah.png" />
+    <Resource Include="Images\Cards\card_As.png" />
+    <Resource Include="Images\Cards\card_Jc.png" />
+    <Resource Include="Images\Cards\card_Jd.png" />
+    <Resource Include="Images\Cards\card_Jh.png" />
+    <Resource Include="Images\Cards\card_Js.png" />
+    <Resource Include="Images\Cards\card_Kc.png" />
+    <Resource Include="Images\Cards\card_Kd.png" />
+    <Resource Include="Images\Cards\card_Kh.png" />
+    <Resource Include="Images\Cards\card_Ks.png" />
+    <Resource Include="Images\Cards\card_Qc.png" />
+    <Resource Include="Images\Cards\card_Qd.png" />
+    <Resource Include="Images\Cards\card_Qh.png" />
+    <Resource Include="Images\Cards\card_Qs.png" />
+    <Resource Include="Images\Cards\card_Tc.png" />
+    <Resource Include="Images\Cards\card_Td.png" />
+    <Resource Include="Images\Cards\card_Th.png" />
+    <Resource Include="Images\Cards\card_Ts.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

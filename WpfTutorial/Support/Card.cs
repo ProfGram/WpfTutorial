@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace WpfTutorial.Support
 {
-    class Card: CardDefinition
+    public class Card: CardDefinition
     {
         private Number number;
         private string image;
         private Color color;
 
-        Card(Number number, string image, Color color)
+        public Card(Color color, Number number, string image)
         {
         }
 

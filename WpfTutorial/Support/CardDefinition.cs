@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace WpfTutorial.Support
 {
-    class CardDefinition
+    public class CardDefinition
     {
         public enum Color
         {
             Heart,
-            Pik,
-            Karo,
+            Spare,
+            Dear,
             Cross
         }
 
