@@ -9,10 +9,10 @@ namespace WpfTutorial.Support
     public class Card: CardDefinition
     {
         private Number number;
-        private string image;
+        private Uri image;
         private Color color;
 
-        public Card(Color color, Number number, string image)
+        public Card(Color color, Number number, Uri image)
         {
             this.color = color;
             this.number = number;
@@ -29,7 +29,7 @@ namespace WpfTutorial.Support
             return this.color;
         }
 
-        public string GetCardImage()
+        public Uri GetCardImage()
         {
             return this.image;
         }

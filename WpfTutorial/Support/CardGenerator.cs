@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace WpfTutorial.Support
 {
@@ -29,34 +31,38 @@ namespace WpfTutorial.Support
 
             CardDefinition.Color color = CardDefinition.Color.Heart;
             CardDefinition.Number number = CardDefinition.Number.Two;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_2h.png"));
+            //bool test = new Uri("../Images/Cards/card_2h.png", UriKind.Relative ).IsAbsoluteUri;
+            //Console.WriteLine(new Uri(@"/../Images/Cards/card_2h.png", UriKind.RelativeOrAbsolute).ToString());
+
+            //Uri testuri = new Uri(@"/../URI/Images/Cards/card_3h.png", UriKind.RelativeOrAbsolute);
+            //drict.Add(number, new Card(color, number, new Uri("../GUI/Images/Cards/card_3h3.png", UriKind.Relative)));
             number = CardDefinition.Number.Three;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_3h.png"));
+            drict.Add(number, new Card(color, number, new Uri(@"../Images/Cards/card_3h.png", UriKind.RelativeOrAbsolute)));
             number = CardDefinition.Number.Four;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_4h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_4h.png", UriKind.Relative)));
             number = CardDefinition.Number.Fife;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_5h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_5h.png", UriKind.Relative)));
             number = CardDefinition.Number.Six;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_6h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_6h.png", UriKind.Relative)));
             number = CardDefinition.Number.Seven;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_7h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_7h.png", UriKind.Relative)));
             number = CardDefinition.Number.Eight;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_8h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_8h.png", UriKind.Relative)));
             number = CardDefinition.Number.Nine;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_9h.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_9h.png", UriKind.Relative)));
             number = CardDefinition.Number.Ten;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_th.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_th.png", UriKind.Relative)));
             number = CardDefinition.Number.Jack;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_Jh.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_Jh.png", UriKind.Relative)));
             number = CardDefinition.Number.Queen;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_Qh.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_Qh.png", UriKind.Relative)));
             number = CardDefinition.Number.King;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_Kh.png"));
+            drict.Add(number, new Card(color, number, new Uri("Images/Cards/card_Kh.png", UriKind.Relative)));
             number = CardDefinition.Number.Ace;
-            drict.Add(number, new Card(color, number, "Images/Cards/card_Ah.png"));
+            drict.Add(number, new Card(color, number, new Uri(@"Images/Cards/card_Ah.png", UriKind.Relative)));
             cards.Add(color, drict);
 
-            drict = new Dictionary<CardDefinition.Number, Card>();
+            /*drict = new Dictionary<CardDefinition.Number, Card>();
             color = CardDefinition.Color.Cross;
             number = CardDefinition.Number.Two;
             drict.Add(number, new Card(color, number, "Images/Cards/card_2c.png"));
@@ -145,6 +151,7 @@ namespace WpfTutorial.Support
             number = CardDefinition.Number.Ace;
             drict.Add(number, new Card(color, number, "Images/Cards/card_Ad.png"));
             cards.Add(color, drict);
+            */
         }
     }
 }

@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System;
 using System.Windows.Controls;
+using WpfTutorial.Support;
 
 namespace WpfTutorial.GUI_Support
 {
@@ -18,13 +19,17 @@ namespace WpfTutorial.GUI_Support
             this._id = id;
             InitializeComponent();
             PlayerName = defaultPlayerName + "" + this._id;
+            //cardOne.CardUri = generator.GetCard(CardDefinition.Color.Heart, CardDefinition.Number.Three).GetCardImage();
+            //Console.WriteLine(cardOne.CardUri.ToString());
         }
+
 
         public enum Position { left, top, right, bottom };
         private string defaultPlayerName = "Player";
         private string _playerName;
         private int _id;
         private double _points = 0;
+        private CardGenerator generator = new CardGenerator();
 
         public void addPointValue(double value)
         {

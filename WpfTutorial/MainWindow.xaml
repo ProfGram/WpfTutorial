@@ -13,7 +13,7 @@
         <controls:PlayerIcon x:Name="test2" Margin="476,452,342,83"></controls:PlayerIcon>-->
         <Image Stretch="Uniform" Canvas.Left="18" Canvas.Top="0" Height="600" Width="850">
             <Image.Source>
-                <BitmapImage UriSource="Images/TableImage/Table.png"/>
+                <BitmapImage UriSource="GUI/Images/TableImage/Table.png"/>
             </Image.Source>
         </Image>
         <Label x:Name="potValueLabel" DataContext="DynamicResource GameController" Content="{Binding PotValue, Mode=OneWay}" Canvas.Left="416" Canvas.Top="315" Height="75" Width="180"></Label>

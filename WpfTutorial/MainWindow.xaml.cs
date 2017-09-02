@@ -28,7 +28,8 @@ namespace WpfTutorial
             this.initGlobalPositions();
             this.initPlayerIcons();
             this.potValueLabel.DataContext = GameModel;
-            Card card = cardGenerator.GetCard(CardDefinition.Color.Cross, CardDefinition.Number.Ace);
+            //Card card = cardGenerator.GetCard(CardDefinition.Color.Heart, CardDefinition.Number.Ace);
+            //Console.WriteLine(card.GetCardImage().ToString());
         }
 
         private void initGlobalPositions()
