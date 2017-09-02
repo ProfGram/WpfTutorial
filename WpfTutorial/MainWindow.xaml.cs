@@ -36,12 +36,12 @@ namespace WpfTutorial
         {
             playerPointList.Add(new Point(410, 480));
             playerPointList.Add(new Point(185, 425));
-            playerPointList.Add(new Point(10, 270));
-            playerPointList.Add(new Point(112.5, 162));
+            playerPointList.Add(new Point(7, 270));
+            playerPointList.Add(new Point(132.5, 162));
             playerPointList.Add(new Point(265, 110));
             playerPointList.Add(new Point(522.5, 110));
-            playerPointList.Add(new Point(687.5, 162));
-            playerPointList.Add(new Point(795, 270));
+            playerPointList.Add(new Point(652.5, 162));
+            playerPointList.Add(new Point(775, 270));
             playerPointList.Add(new Point(635, 425));
         }
 

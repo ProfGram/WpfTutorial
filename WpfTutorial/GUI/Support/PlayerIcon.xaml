@@ -9,7 +9,7 @@
              d:DesignHeight="250" Width="250" >
 
     <Canvas>
-        <Label Grid.Row="0" HorizontalContentAlignment="Center" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="81" Width="107" Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="center"  Grid.RowSpan="2" >
+        <Label Grid.Row="0" HorizontalContentAlignment="Center" Background="#FF1212DE" Foreground="#FFF7EFEF" Height="114" Width="107" Content="{Binding Path=PlayerName, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="center"  Grid.RowSpan="2" >
             <Label.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Activate Player" Click="MenuItem_Click"/>
@@ -19,17 +19,17 @@
                 </ContextMenu>
             </Label.ContextMenu>
         </Label>
-        <support:Card x:Name="cardOne" Canvas.Top="15" Height="73" Width="60" Canvas.Left="5" RenderTransformOrigin="0.5,0.5">
+        <support:Card x:Name="cardOne" Canvas.Top="43" Height="73" Width="60" Canvas.Left="5" RenderTransformOrigin="0.35,0.35">
             <support:Card.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
                     <SkewTransform/>
                     <RotateTransform/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="2.7" Y="3.285"/>
                 </TransformGroup>
             </support:Card.RenderTransform>
         </support:Card>
-        <support:Card x:Name="cardTwo" Canvas.Top="15" Height="72" Width="60" Canvas.Left="50" RenderTransformOrigin="0.5,0.5">
+        <support:Card x:Name="cardTwo" Canvas.Top="43" Height="72" Width="60" Canvas.Left="50" RenderTransformOrigin="0.5,0.5" >
             <support:Card.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
@@ -40,8 +40,8 @@
             </support:Card.RenderTransform>
 
         </support:Card>
-        <Label Canvas.Top="81" Width="63" Height="28" Background="Transparent" Foreground="Black"  HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Content="{Binding Path=Points, Mode=OneWay}" ToolTip="" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="1"/>
-        <Label Content="$" Background="Transparent" Foreground="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Canvas.Left="64" Canvas.Top="86" Height="28" Width="16" RenderTransformOrigin="0.479,0.75"></Label>
+        <Label Canvas.Top="24" Width="63" Height="28" Background="Transparent" Foreground="Black"  HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Content="{Binding Path=Points, Mode=OneWay}" ToolTip="" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="1"/>
+        <Label Content="$" Background="Transparent" Foreground="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Canvas.Left="64" Canvas.Top="23" Height="28" Width="16" RenderTransformOrigin="0.479,0.75"></Label>
 
     </Canvas>
 </UserControl>
